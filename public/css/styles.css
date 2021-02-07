@@ -102,7 +102,7 @@ a:link, a:visited, a:active {
  }
 
 .btn-burger {
-    margin-top: 4px; 
+    margin-top: 8px; 
     margin-right: 15px; 
 }
 
@@ -112,7 +112,7 @@ nav a.nav-drop-down {
 
 a .btn-burger {
     color: white; 
-    background: #3385A6; 
+    background: #CBB3D8; 
     display: flex;
     border: 0.3px solid white; 
     padding: 5px;  
@@ -296,6 +296,11 @@ footer {
        display:none;
    } 
 
+   nav {
+    max-width: 1140px;
+    text-align: center; 
+   }  
+
    .links-nav {
        display: inline-flex;
    }
@@ -303,6 +308,7 @@ footer {
    .links-nav a{
        position: inherit; 
        color: white; 
+       font-family: 'Ubuntu';
    }
 
   .col.cuadruple_md {
