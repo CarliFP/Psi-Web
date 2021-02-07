@@ -3,196 +3,312 @@
 
 <head>
     <meta charset="utf-8">
-    <!--Viewport-->
     <meta name= "viewport" content= "width=device-width, initial-scale=1">
 
     <title>"Psi"</title>
-
-    <!--Css styles-->
-    <!-- <link href ="css/normalize.css" rel="stylesheet"> -->
+    <link href ="css/normalize.css" rel= "stylesheet">
     <link href ="css/styles.css" rel="stylesheet">
-
-    <!-- Load icon library -->
-    <!--este link funciona: link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"-->
-    <!--el link sugerido en el playground no me funciono: href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" -->
     <script src="https://kit.fontawesome.com/17c2d4139d.js" crossorigin="anonymous"></script> 
     
     <!--link para la fuente Roboto-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
 
     <header class="header-main">
-        
-         <!--LOGO/SEARCH NAV BAR--> 
-        <nav class= "main-header-top-bar">
-            <div class = "container-logo">
-                <img class= "logo" src="./img/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+        <nav>
+            <div>
+                <img src ="./img/logo-web.png" alt= "logo de terapia desde casa">
             </div>
-
-        <!--SPACE FOR SEARCH NAV-BAR--> 
-        <div class = "container-search-bar">
-         <form class="search-bar" method= "POST" action= #>
-             <input class = "search-bar-input" type="text" id="text" placeholder="Buscar productos, marcas..." name="search">
-             <button type="submit"><i class="fas fa-search"></i></button>
-         </form>
-        </div>
-        
-        <!--COPY-HEADER--> 
-        <div class ="container-copy-header">
-            <p class= "copy-header">
-                 <i class= "fas fa-hand-holding-usd"></i>
-                 Compra en cuotas y con tarjeta de crédito</p> 
-            </div>
-        </nav>
-
-         <!--BURGER MENU--> 
-      
-        <a href="#" class ="burger-menu"><i class = "fa fa-bars burger"></i></a>
-
-          <!--NAV-BAR-LIST--> 
-        <nav  class= "main-nav-bar">
-            <ul class= "left-navbar">
-                <li> <a href="#">Ofertas</a></li>
-                <li> <a href="#">Tiendas Oficiales</a></li>
-                <li> <a href="#">Vender</a></li>
-                <li> <a href="#">Ayuda</a></li>
-            </ul>
-
-            <ul class="right-navbar">
-                <li> <a href='/register'>Creá tu cuenta</a><i class="far fa-address-card"></i></li>
-                <li> <a href='/login'>Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
-                <li> <a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+            <ul>
+                <li> <a href="#inicio">Inicio</a></li>
+                <li> <a href="#equipo">Equipo</a></li>
+                <li> <a href="#metodologia">Metodología</a></li>
+                <li> <a href="/notas">Notas</a></li>
+                <li> <a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
-
-         <!--BANNER--> 
-        <div class = "home-banner">
-             <img src="./img/img-home-banner.jpg" alt="Cafetera moulinex">
-        </div>
-
+    
     <main>
-
-        <h2 subtitle>Basado en tu última búsqueda</h2>
-
-        <section>
-            <article class= "section-article">
-                <img src="./img/img-cafetera-moulinex.jpg" alt="Cafetera moulinex">
-                <div class="main-article">
-                    <i class = "fas fa-truck"></i>
-                    <h3 class="price">$6.770</h3>
-                    <h4 class="disc">40% OFF</h4>
-                    <h4 class="product">Cafetera Moulinex</h4>
-                </div>
-            </article>
-
-            <article class= "section-article">
-                <img  src="./img/img-macbook-pro-2019.jpg" alt="Imagen de macbook Pro 2019">
-                <div class ="main-article">
-                    <i class = "fas fa-truck"></i>
-                    <h3 class="price">$230.000</h3>
-                    <h4 class="disc">20% off</h4>
-                    <h4 class="product">MacBook Pro 2019</h4>
-                </div>
-            </article>
-
-            <article class= "section-article">
-                <img src="./img/img-samsung-galaxy-s10.jpg" alt="Imagen del samsung galaxy, modelo-s10">
-                <div class= "main-article">
-                    <i class = "fas fa-truck"></i>
-                    <h3 class="price">$70.500</h3>
-                    <h4 class="disc">10% off</h4>
-                    <h4 class="product">Samsung Galaxy S10</h4>
-                </div>
-            </article>
-
-            <article class= "section-article">
-                <img  src="./img/img-tv-samsung-smart.jpg" alt="Imagen del samsung smart-tv">
-                <div class="main-article">
-                    <i class = "fas fa-truck"></i>
-                    <h3 class="price">$23.200</h3>
-                    <h4 class="disc">5% off</h4>
-                    <h4 class="product">SmartTv Samsung 43" </h4>
-                </div>
-            </article>
-
-        </section>
-
-        <h2>Sección de Ofertas</h2>
-
-        <section> 
-
-            <article>
-                <img src="./img/img-cafetera-moulinex.jpg" alt="Cafetera moulinex">
-                <div class="main-article">
-                    <i class= "fas fa-truck"></i>
-                    <h3 class="price">$6.770</h3>
-                    <h4 class="disc">40% OFF</h4>
-                    <h4 class="product">Cafetera Moulinex</h4>
-                </div>
-            </article>
-
-            <article>
-                <img  src="./img/img-macbook-pro-2019.jpg" alt="Imagen de macbook Pro 2019">
-                <div class ="main-article">
-                        <i class= "fas fa-truck"></i>
-                        <h3 class="price">$230.000</h3>
-                        <h4 class="disc">20% off</h4>
-                        <h4 class="product">MacBook Pro 2019</h4>
-                </div>
-            </article>
-
-            <article>
-                <img src="./img/img-samsung-galaxy-s10.jpg" alt="Imagen del samsung galaxy, modelo-s10">
-                <div class= "main-article">
-                    <i class= "fas fa-truck"></i>
-                    <h3 class="price">$70.500</h3>
-                    <h4 class="disc">10% off</h4>
-                    <h4 class="product">Samsung Galaxy S10</h4>
-                </div>
-            </article>
-
-            <article>
-                <img  src="./img/img-tv-samsung-smart.jpg" alt="Imagen del samsung smart-tv">
-                <div class="main-article">
-                    <i class= "fas fa-truck"></i>
-                    <h3 class="price">$23.200</h3>
-                    <h4 class="disc">5% off</h4>
-                    <h4 class="product">SmartTv Samsung 43" </h4>
-                </div>
-            </article>
-        </section>
-    </main>
-
-        <footer>
-            <div>
-                <section class="section-footer">
-                        <i class="fas fa-credit-card"></i>
-                        <h2>Pagá con tarjeta o en efectivo</h2>
-                        <p class= "p-footer">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                        puntos de pago. ¡Y siempre es seguro!</p>
-                </section>
-
-                <section class = "section-footer">
-                        <i class="fas fa-gift"></i>
-                        <h2>Envío gratis desde $ 2.500</h2>
-                        <p class= "p-footer">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                    productos. Es un beneficio de Mercado Puntos.</p>
-                </section>
-                
-                <section class= "section-footer">
-                        <i class="fas fa-user-shield"></i>
-                        <h2>Seguridad, de principio a fin</h2>
-                        <p class= "p-footer"> ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                    porque estás siempre protegid@.</p>
-                </section>
+            <div class="banner">
+                <img src= "./img/banner-inicio.png">
             </div>
-            <section>
-                    <p class= "copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-            </section>
+
+            <article class="inicio" id="inicio">
+                <section>
+                    <h3> En Terapia desde Casa te proponemos generar un espacio de elaboración para 
+                        ayudarte a procesar cambios, experiencias y vivencias, a través de sesiones virtuales.</h3>
+
+                    <p>Somos un equipo de psicólogas con formación psicoanalítica con amplia trayectoria institucional, 
+                        educacional y clínica. Tenemos un sólido conocimiento y conexión con las realidades y vivencias de 
+                        las personas argentinas radicadas fuera del país. Nos encanta lo que hacemos y lo hacemos con pasión.</p>
+
+                    <p>Ejercemos nuestra profesión desde hace 30 años atendiendo pacientes de manera ininterrumpida.</p>    
+                </section>
+
+                <section>
+                    <h4>¿Por qué decidimos atender online?</h4>
+                    <p>Desde hace varios años gran cantidad tanto de allegados como pacientes decidieron emigrar por distintas razones: 
+                        trabajo, pareja, salud, ganas de cambiar de aire. Fue así que nos adentramos en el mundo virtual para continuar con los tratamientos que ya estaban en curso.
+                        Nuestra experiencia nos demostró que, a pesar de la desconfianza inicial en esta modalidad de trabajo, se puede tener una terapia exitosa por estos medios. 
+                        A raíz de esto, nos animamos a comenzar nuevos procesos terapéuticos con Argentinos que conocimos a través de la cámara web, con quienes pudimos construir un 
+                        vínculo paciente/terapeuta que nos permitió llevar adelante los tratamientos con la misma profundidad que se logra en el consultorio.     
+                    </p>    
+                </section>
+
+                <section>
+                    <h4>¿Qué tipo de terapia hacemos?</h4>   
+                    <p>
+                        Ejercemos como psicoterapeutas con formación psicoanalítica y mirada integracionista, contemplando los aportes de las 
+                        teorías vinculares. Estamos convencidas que es lo que ayuda a entender el por qué o el para qué de tantas conductas que 
+                        a nosotros mismos nos resultan incomprensibles. Mediante la terapia apuntamos a acompañar a nuestros pacientes en el tránsito
+                        de  diferentes situaciones conflictivas. Como por ejemplo duelos, separaciones, miedos, problemas de relación con hijos, padres, 
+                        problemas laborales, enfermedades, el paso del tiempo…propio y de los demás.
+                    </p>
+                </section>
+
+                <section>
+                        <h4>¿A quién nos dirigimos?</h4>
+                        <p>
+                            A los/as argentinos/as radicados en el exterior: porque somos argentinas, porque compartimos historia, olores, sabores, 
+                            lenguaje,modismos, gestos, emociones, acento…
+                        </p>
+                        <p>
+                            Creemos que el compartir la cultura, la lengua y entender la idiosincrasia argentina nos da un valor agregado que hace más fácil
+                            el tránsito desde el contacto virtual a la empatía del encuentro, aún a distancia.
+                        </p>
+                        <h4>Nos dedicamos, confiamos en esto y nos ponemos a disposición.</h4>
+                    </section>
+                    
+            </article>
+
+            <article class= "equipo" id="equipo">
+
+                <h2>Equipo</h2>
+
+                <section class= "Melania">
+
+                    <div class ="img-Melania">
+                        <img src="./img/fotoMelania.png" alt="Melania Bernardez">
+                        <p>Correo electrónico: mbernardez@gmail.com</p>
+                    </div>
+
+                <div class= "cv-Melania"> 
+                    <h2>Lic. Melania Bernárdez</h2>
+                    <p>
+                            Obtuve mi título de Licenciada en Psicología por la UBA en el año 1983. Mis intereses me 
+                            llevaron a realizar especializaciones y estudios de posgrados en Orientación Vocacional Ocupacional,
+                            Psicoanálisis de Pareja y familia y Orientación a padres.
+                    </p>
+                    <p>
+                            Egresé de la Asociación Escuela Argentina de Psicoterapia para Graduados, donde hice mi formación en la Especialización
+                            en Psicoanálisis.
+                    </p>
+                    <p>
+                            Realicé actividad docente en centros de formación y universidades (AEAPG , USAL, UCA, y en el Hospital de ClÍnicas de
+                            Bs. As.). Desde 2017 me desempeño como profesora interina en la Universidad AUSTRAL.
+                    </p>
+                    <p>
+                            También llevo adelante un consultorio privado desde 1985 a la fecha y me dedico a la supervisión clínica a psicólogos
+                            con fundamento psicoanalítico desde 2005 a la fecha.
+                    </p>
+                    <p>
+                            Desde 2001 a la fecha realizo un seminario de integración sobre la clínica y la teoría de S. Freud dirigidos a psicólogos.
+                    </p>
+                </div>
+                </section>
+
+                <section class ="Daniela">
+                    <div class ="img-Daniela">
+                        <img src="./img/fotoDaniela.png" alt="Daniela Steiner">
+                        <p>Correo electrónico: steiner_daniela@hotmail.com</p>
+                    </div>
+
+                    <div class="cv-Daniela">
+                        <h2>Lic. Daniela Steiner</h2>
+                        <p>
+                            En el año 1986 me licencié en Psicología en la Universidad de Belgrano. En 1992 egresé de la Asociación Argentina
+                            de Psicoterapia para graduados, con una especialización en Psicoanálisis.
+                        </p>
+                        <p>
+                            Desde el año 1987 a 1990 fui Psicóloga Concurrente del Servicio de Salud Mental del Hospital Argerich en 
+                            Interconsulta Médico-psicológica y Consultorios externos.
+                        </p>
+                        <p>
+                            A su vez fui psicóloga de la Mutual de Empleados de Banco Shaw desde 1987 a 1990.
+                        </p>
+                        <p>
+                            Trabajé realizando entrevistas psicodiagnósticas a padres en proceso de adopción en el Equipo San José Asistencial 
+                            y de Adopción desde el año 2006 a 2008.
+                        </p>
+                        <p>
+                            Me desempeño como profesional en Psicología Clínica y Psicología laboral desde el año 1986 a la actualidad y desde 2016 realizo 
+                            supervisión clínica a psicólogos desde la perspectiva psicoanalítica.
+                        </p>
+                        <p>
+                            Continúo formándome constantemente a través de seminarios y grupos de estudio en mi especialización.
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                <div class ="img-Ines">
+                    <img src="./img/fotoInes.png" alt="Ines Teresa Berro">
+                    <p>Correo electrónico: inestberro@gmail.com</p>
+
+                </div>
+
+                <div class="cv-Ines">
+                    <h2>Lic. Inés Teresa Berro</h2>
+                    <p>
+                        Concluí la carrera de Psicología en la UBA en 1985 y luego me aboqué a la formación Psicoanáltica.
+                        Egresé y soy miembro de International Psychoanalytical Association y de la Asociación Psicoanalítica Argentina y 
+                        egresada de Asociación Escuela Argentina de Psicoterapia para Graduados.
+                    </p>
+                    <p>
+                        Realicé estudios de posgrado y especialización en la University College London, en la University of California, San Francisco y
+                        en la Universidad de Saarland, Saarbrücken, Alemania.
+                    </p>
+                    <p>
+                        Realicé actividad docente como profesora Pro-titular en Universidad Católica Argentina en la cátedra de Psicología Profunda, 
+                        Facultad de Psicología entre 2000 y 2012, y actualmente me desempeño como profesora a cargo de la cátedra de Teorías Psicológicas
+                        I y Psicología de la Personalidad de la Universidad Austral desde 2014 a la fecha.
+                    </p>
+                    <p>
+                        Fui psicóloga de la obra social del personal superior de caucho CAMPSIC desde 1985 hasta 2001.
+                    </p>
+                    <p>
+                        Llevo adelante mi consultorio privado y realizo actividades de supervisión clínica a psicólogos y psiquiatras con fundamento psicoanalítico desde 2005.
+                    </p>
+                    <p>
+                        A su vez, desde 2006 imparto un seminario de integración sobre la clínica y la teoría de S. Freud y D Winnicott dirigidos a psicólogos y psiquiatras. Desde 2010, también formo parte de un grupo de estudio sobre S. Ferenczi y 
+                        la línea relacional en psicoanálisis dirigidos a psicólogos.
+                    </p>
+                    <p>
+                        Asimismo, a lo largo de mi carrera adquirí experiencia en actividad hospitalaria. Fui integrante del Equipo de Interconsulta del Hospital Municipal de San Isidro
+                        y del Equipo de Psicopatología de ACERVIL (Asociación Centro de Rehabilitación de Vicente López) de 1987 a 1992. De 2005 a 2007 trabajé en la coordinación del área de 
+                        diagnóstico del Centro de Estrés Postraumático de Buenos Aires (CEPT).
+                    </p>
+                </div>
+                </section>
+
+            </article>
+
+            <article class="metodologia" id="metodologia">
+
+                <section>
+                <h2>Metodología</h2>
+                    <p>
+                        Nuestra metodología consiste en comenzar con una o dos entrevistas de conocimiento y 
+                        diagnóstico para luego acordar un ritmo de sesiones terapéuticas
+                    </p> 
+                </section>
+
+                <section>
+                    <h3> Entrevista de conocimiento y diagnóstico.</h3>
+                    <p>
+                        Como en toda situación nueva pueden surgir dudas y consultas que se aclaran con el profesional. En esta entrevista se analizará el motivo de consulta  y se evaluarán las necesidades terapéuticas. 
+                        En función de las mismas, se acordará la frecuencia de las sesiones que serán de 50 minutos. Creemos que la elección debe ser mutua. Es decir, que el analista debe entender 
+                        la demanda y el consultante debe sentirse comprendido y a gusto con el profesional.
+                    </p>
+
+                    <p>
+                        Priorizamos el trato personalizado, la confidencialidad y el compromiso con el paciente.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Sesiones terapéuticas</h3>
+                    <p>
+                        El psicoanálisis es una disciplina científica que estudia y describe al Ser Humano en su complejidad. Tiene como finalidad la investigación y 
+                        tratamiento de los problemas emocionales que nos atañen.  
+                    </p>
+                    <p>
+                        A partir de la comprensión de las causas que originan el sufrimiento psíquico de la persona, gradualmente puede aliviarlos e ir modificando actitudes que redundarán en su armonía personal y 
+                        por ende en la relación que desarrolla con el mundo exterior.
+                    </p>
+
+                </section>
+
+                <section>
+                    <h3>Formas de pago</h3>
+                    <p>
+                        Se acordarán en la primer entrevista
+                    </p>
+                </section>
+
+
+                <section class = "img-sesiones">
+                    <div>
+                        <img src ="./img/semanales.png" alt= "sesiones semanales">
+                        <p>Sesiones semanales</p>
+                    </div>
+
+                    <div>
+                        <img src="./img/quincenales.png" alt= "sesiones quincenales">
+                        <p>Sesiones quincenales</p>
+                    </div>
+
+                    <div>
+                        <img src= "./img/focalizadas.png" alt="sesiones focalizadas">
+                        <p>Sesiones focalizadas</p>
+                    </div>
+                </section>
+
+            </article>
+        
+    
+        </main>
+        
+        <footer id="contacto">
+
+            <div class="contacto">
+                <h2>Contacto</h2>
+                <p>Hablemos 👋. No dudes en comunicarte con nosotras mediante la información de contacto a continuación,
+                o envianos un mensaje mediante el formulario.</p>
+            </div>
+
+            <div class ="contactos-psi">
+                <h2>Ponete en contacto con nosotras</h2>
+                <div>
+                   <h3>Lic. Daniela Steiner</h3>
+                   <div>
+                      <p>+5491168208123</p><a href="https://api.whatsapp.com/send/?phone=5491168208123&text=%22Hola+%C2%A1+Hola+Daniela%22&app_absent=0" class="whatsapp" 
+                        target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>  
+                   </div>
+                    <p>steiner_daniela@hotmail.com</p>
+                </div>
+
+                <div>
+                    <h3>Lic. Melania Bernardez</h3>
+                    <div>
+                       <p>+5491154003190</p><a href="https://api.whatsapp.com/send/?phone=5491154003190&text=%22Hola+%C2%A1+Hola+Melania%22&app_absent=0" class="whatsapp" 
+                        target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a> 
+                    </div>
+                    <p>mbernardez@gmail.com</p>
+                </div>
+
+                <div>
+                    <h3>Lic. Inés Teresa Berro</h3>
+                    <div>
+                        <p>+5491162677424</p><a href="https://api.whatsapp.com/send/?phone=5491162677424&text=%22Hola+%C2%A1+Hola+Inés%22&app_absent=0" class="whatsapp" 
+                        target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a> 
+                    </div>
+                    <p>mbernardez@gmail.com</p>
+                </div>
+                
+            </div>
+
+            <form class ="form-contacto" action="/contact" method="POST">
+                <input type ="email" name= "email" placeholder= "Correo electrónico" required>
+                <input type ="text" name= "name" placeholder= "Nombre" required>
+                <textarea name ="comentario" id="comentario"> Escríbenos...</textarea>
+            </form>
+
         </footer>
-</body>
-</html>
+        
+    </body>
+    </html>
