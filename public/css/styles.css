@@ -1,13 +1,335 @@
-/*
+/*colores*/
 
-#191919
+/* #3385A6 nav */
+/* E5C342 logo #E5C342 */
+/* #F26B5E */
+/* #5632A6*/
+/* #3A2073 */
+/*#353535*/
+/*#E9BF95*/
 
-#191919
+/* normalize */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
 
-#47A3DA
+/*MOBILE FIRST*/
 
-#FFFFFF
+body {
+    font-family: 'Roboto';
+    background: #F9F9F2; 
+    color: #353535; 
+    text-align: justify; 
+    font-size: 1em; 
+    line-height: 1.5em; 
+}
 
 
-#E89D3D
-*/
+main {
+    width: 100%; 
+}
+
+
+h1 {
+    font-family: 'Ubuntu'; 
+    font-size: 16px;
+}
+
+h2 {
+    color: #3A2073 ; 
+}
+
+h3 {
+    color: #E5C342;
+    text-align: left; 
+}
+
+h4 {
+    color: #E5C342; 
+    font-weight: 700; 
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+    list-style: none; 
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* Mobile Clases */
+.container {
+    width: 100%;
+ }
+ 
+ .row {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+ .col {
+     flex-basis: 100%;
+     /* gutter */
+     margin:10px;
+ }
+
+/*HEADER*/
+
+ header {
+     opacity: 0.9; 
+     width: 100%;
+     margin: 0 auto;
+     position: fixed; 
+     z-index: 100; 
+     background: #3A2073; 
+     color: white; 
+ } 
+
+ /*NAV*/
+
+ .nav-logo {
+     display: flex; 
+     justify-content: space-between;
+     flex-wrap: nowrap; 
+ }
+
+.btn-burger {
+    margin-top: 4px; 
+    margin-right: 15px; 
+}
+
+nav a.nav-drop-down {
+    padding-left: 10px;
+}
+
+a .btn-burger {
+    color: white; 
+    background: #3385A6; 
+    display: flex;
+    border: 0.3px solid white; 
+    padding: 5px;  
+    border-radius: 4px; 
+}
+
+.links-nav{
+    display: none; 
+}
+
+img{
+    margin: 0; 
+    padding: 0; 
+    max-width: 100%;
+}
+
+/*BANNER*/
+
+.banner {
+    position: relative; 
+}
+
+.banner img {
+    margin-top: 40px; 
+    width: 100%; 
+    border: none; 
+}
+
+.names {
+    font-family: 'Ubuntu';
+    font-size: 12px; 
+    line-height: 1em; 
+    position: absolute; 
+        right: 80px; 
+        top: 70px; 
+}
+
+/*ARTICLE SECTION INICIO*/
+.article-inicio {
+    padding: 15px; 
+}
+
+.intro {
+    font-family: 'Ubuntu';
+    color: #3A2073; 
+    margin-bottom: 10px; 
+ }
+
+ .text-intro {
+     padding: 20px;
+     text-align: center; 
+ }
+
+ .equipo {
+     padding: 15px; 
+     padding-top: 40px; 
+     padding-bottom: 20px; 
+ }
+
+ .mail {
+     font-size: 12px; 
+     text-align: center; 
+ }
+
+ .metodologia {
+    padding: 15px;
+ }
+
+ .intro-metodologia p {
+    text-align: center;
+    margin-bottom: 10px; 
+ }
+
+
+ .sesiones {
+     margin-top: 20px; 
+ }
+
+.sesiones-img {
+    border-radius: 200px; 
+    padding-top: 20px; 
+}
+
+.sesiones-text {
+    text-align: center;
+}
+
+
+footer {
+    padding-top:10px; 
+    width: 100%; 
+    margin: 0 auto; 
+    margin-top: 50px; 
+    background: #3A2073; 
+    color: white;
+    line-height: 1.5em; 
+}
+
+.psicologa {
+    min-width: 250px;
+}
+
+.whatsapp-icon {
+    color:#FFF;
+    text-align: center; 
+    font-size:40px;
+}
+
+.contacto-title {
+    color: #E5C342;
+    padding: 10px;  
+}
+.contacto-text {
+    text-align: center;
+    padding: 10px;  
+}
+
+.formulario-contacto {
+   margin: 10px; 
+}
+
+ 
+ form {
+    max-width: 500px;
+    text-align: center;
+    margin: 10px auto; 
+    padding: 20px; 
+ }
+   input, textarea {
+      border:0;
+      border-radius: 4px; 
+      padding: 1em;
+      width: 100%;
+      margin-top: 1em;
+   }
+   
+   #input-submit {
+      color: gray; 
+      cursor: pointer;
+      border-radius: 4px; 
+    }
+
+   textarea {
+       height: 182px;
+       border-radius: 4px; 
+   }
+ 
+ .half {
+   float: left;
+   width: 48%;
+   margin-bottom: 1em;
+ }
+ 
+ .right { width: 50%; }
+ 
+ .left {
+      margin-right: 2%; 
+ }
+ 
+
+
+/* Tablets */
+@media (min-width: 460px){
+    .col {
+        flex:1;
+    }
+    .col.cuadruple_sm {
+        flex: 4;
+    }
+    .col.triple_sm {
+        flex: 3;
+    }
+    .col.doble_sm {
+        flex: 2;
+    }
+}
+
+@media (min-width: 768px){
+
+   .nav-logo {
+       display:none;
+   } 
+
+   .links-nav {
+       display: inline-flex;
+   }
+
+   .links-nav a{
+       position: inherit; 
+       color: white; 
+   }
+
+  .col.cuadruple_md {
+    flex: 4;
+  }
+  .col.triple_md {
+    flex: 3;
+  }
+  .col.doble_md {
+    flex: 2;
+  }
+}
+
+
+/* Desktop */
+@media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    .col.cuadruple_lg {
+        flex: 4;
+    }
+    .col.triple_lg {
+        flex: 3;
+    }
+    .col.doble_lg {
+        flex: 2;
+    }
+}
